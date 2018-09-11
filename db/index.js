@@ -27,6 +27,7 @@ const syncAndSeed = () => {
     .then(([moe, larry, curly]) => {
       moe.setManager(larry);
       curly.setManager(larry);
+      larry.setManager(curly);
     });
 };
 
